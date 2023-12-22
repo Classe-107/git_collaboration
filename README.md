@@ -23,7 +23,9 @@ php artisan serve
 ctrl + c
 
 ```
+
 ## Configurazione Laravel
+
 ```bash
 composer require pacificdev/laravel_9_preset
 
@@ -48,12 +50,13 @@ git init
 git add .
 git commit -m "first commit"
 git branch -M main
-git remote add origin your_git_url 
+git remote add origin your_git_url
 git push -u origin main
 
 
 ```
-## Clono progetto da github 
+
+## Clono progetto da github
 
 ```bash
 # copio file .env.example e lo rinomino in .env
@@ -87,11 +90,11 @@ php artisan make:seeder UsersTableSeeder
 
 php artisan db:seed --class=UsersTableSeeder
 
-# preparo le rotte file web.php es. 
+# preparo le rotte file web.php es.
 Route::get('/books', [BookController::class, 'index'])->name('books.index');
 
 # creo controller
-php artisan make:controller NomeController
+php artisan make:controller BookController
 
 
 # creo le views relative
